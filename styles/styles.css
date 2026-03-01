@@ -44,6 +44,7 @@ body {
     line-height: 1.5;
     font-style: normal;
     background: var(--color-dark-gray);
+    color: var(--color-light);
 }
 
 svg *[fill] { fill: currentColor }
@@ -59,7 +60,9 @@ svg * {
 
 .button {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
+    padding: 12px 15px;
     height: 51px;
     border-radius: 6px;
     background-color: var(--color-light-blue);
@@ -67,6 +70,10 @@ svg * {
     white-space: nowrap;
     color: var(--color-light);
     border: none;
+}
+
+.button:hover {
+    background-color:#0b6275;
 }
 
 .visually-hidden {
@@ -85,6 +92,10 @@ svg * {
 section {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .container {
@@ -178,7 +189,6 @@ section {
     font-size: 80px;
     line-height: 1.1;
     letter-spacing: 0.04em;
-    color: var(--color-light);
 }
 
 .hero-social-text {
@@ -186,7 +196,6 @@ section {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.6;
-    color: var(--color-light);
     margin-bottom: 16px;
 }
 
@@ -232,7 +241,6 @@ section {
     font-size: 64px;
     line-height: 1.2375;
     letter-spacing: 0.05em;
-    color: var(--color-light);
 }
 
 .episodes-button {
@@ -252,13 +260,113 @@ section {
     display: flex;
     padding: 40px;
     gap: 53px;
-    /*background-color: var(--color-dark);*/
+    background-color: var(--color-dark);
     border-radius: 32px;
 }
 
 .episodes-card-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+}
+
+.episodes-card-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 73px;
+    height: 27px;
+    background-color: var(--color-dark-gray);
+    margin-bottom: 48px;
+}
+
+.episode-card-number {
+    color: var(--color-light-blue);
+    margin-bottom: 18px;
+}
+
+.episodes-card-title {
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    width: 611px;
+    margin-bottom: 28px;
+}
+
+.episodes-card-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.episodes-card-button {
+    width: 208px;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 590px;
+}
+
+.about-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: var(--color-light-blue);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.about-svg {
+    width: 38px;
+    height: 71px;
+}
+
+.about-content-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-light-blue);
+}
+
+.about-content-title {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+}
+
+.about-content-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 33px;
+}
+
+.about-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.about-block {
+    width: 650px;
+    height: 743px;
+    border-radius: 12px;
+    background-image: url(/image/man-white-t-shirt-2x.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
