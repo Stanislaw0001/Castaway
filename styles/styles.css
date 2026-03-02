@@ -459,3 +459,52 @@ section {
 .reviews-subtitle {
     font-size: 24px;
 }
+
+.footer-content {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section-item {
+    font-size: 17px;
+}
+
+.footer-copywriting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-copywriting-item {
+    font-size: 17px;
+}
+
+.footer-icon-list {
+    display: flex;
+    gap: 17px;
+}
