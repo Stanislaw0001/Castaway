@@ -33,6 +33,7 @@ img {
 
 :root {
     --color-light: #fff;
+    --color-light-gray: #757575;
     --color-dark-gray: #191919;
     --color-dark: #000;
     --color-light-blue: #118da8;
@@ -41,6 +42,7 @@ img {
 
 body {
     font-family: "DM Sans", sans-serif;
+    font-weight: 400;
     line-height: 1.5;
     font-style: normal;
     background: var(--color-dark-gray);
@@ -98,6 +100,11 @@ section {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.card {
+    background-color: var(--color-dark);
+    border-radius: 32px;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -137,7 +144,6 @@ section {
 }
 
 .header-menu-link {
-    font-weight: 400;
     font-size: 17px;
 }
 
@@ -177,7 +183,6 @@ section {
 }
 
 .hero-text {
-    font-weight: 400;
     font-size: 70px;
     line-height: 1.25714;
     letter-spacing: 0.05em;
@@ -193,7 +198,6 @@ section {
 
 .hero-social-text {
     display: flex;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 16px;
@@ -228,7 +232,7 @@ section {
     height: 32px;
 }
 
-.episodes-container {
+.episodes-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +241,6 @@ section {
 }
 
 .episodes-title {
-    font-weight: 400;
     font-size: 64px;
     line-height: 1.2375;
     letter-spacing: 0.05em;
@@ -245,7 +248,6 @@ section {
 
 .episodes-button {
     padding-block: 12px 15px;
-    font-weight: 400;
     font-size: 17px;
     line-height: 1.5;
 }
@@ -260,8 +262,6 @@ section {
     display: flex;
     padding: 40px;
     gap: 53px;
-    background-color: var(--color-dark);
-    border-radius: 32px;
 }
 
 .episodes-card-info {
@@ -288,7 +288,6 @@ section {
 }
 
 .episodes-card-title {
-    font-weight: 400;
     font-size: 57px;
     line-height: 1.2;
     letter-spacing: 0.04em;
@@ -297,7 +296,6 @@ section {
 }
 
 .episodes-card-subtitle {
-    font-weight: 400;
     font-size: 22px;
     line-height: 1.5;
     margin-bottom: 18px;
@@ -337,13 +335,11 @@ section {
 }
 
 .about-content-text {
-    font-weight: 400;
     font-size: 18px;
     color: var(--color-light-blue);
 }
 
 .about-content-title {
-    font-weight: 400;
     font-size: 65px;
     line-height: 1.2;
     letter-spacing: 0.04em;
@@ -351,13 +347,11 @@ section {
 }
 
 .about-content-subtitle {
-    font-weight: 400;
     font-size: 22px;
     margin-bottom: 33px;
 }
 
 .about-subtitle {
-    font-weight: 400;
     font-size: 22px;
 }
 
@@ -369,4 +363,99 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.subscribe-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+    line-height: 1.2;
+    padding: 65px 60px;
+}
+
+.subscribe-info {
+    max-width: 642px;
+}
+
+.suscribe-text {
+    font-size: 18px;
+    color: var(--color-light-blue);
+}
+
+.subscribe-title {
+    font-size: 72px;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 522px;
+}
+
+.subscribe-input {
+    padding: 26px 19px;
+    border: none;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px;
+    background: var(--color-dark-gray);
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    background: var(--color-light-gray);
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus::placeholder {
+    color: var(--color-dark);
+}
+
+.subscribe-button {
+    width: 87px;
+    height: 48px;
+}
+
+.reviews-container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.reviews-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.reviews-card {
+    padding: 50px 55px;
+    height: 321px;
+}
+
+.reviews-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviews-star-list {
+    display: flex;
+    
+}
+
+.reviews-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.reviews-text {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.reviews-subtitle {
+    font-size: 24px;
 }
