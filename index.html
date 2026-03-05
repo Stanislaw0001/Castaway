@@ -22,36 +22,46 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
-        <a href="/index.html" class="header-logo">
-          <img
-            src="./image/svg-sprite/logo.svg"
-            alt="Castaway"
-            width="160"
-            height="33"
-          />
-        </a>
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a href="/index.html" class="header-menu-link"><span>Home</span></a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#episodes" class="header-menu-link">Episodes</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#about" class="header-menu-link">About</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#contact" class="header-menu-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <nav class="header-navigation">
+          <a href="/index.html" class="header-logo">
+            <img
+              src="./image/svg-sprite/logo.svg"
+              alt="Castaway"
+              width="160"
+              height="33"
+            />
+          </a>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a href="/index.html" class="header-menu-link"
+                ><span>Home</span></a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a href="#episodes" class="header-menu-link">Episodes</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#about" class="header-menu-link">About</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#contact" class="header-menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
           <div class="hero-container">
-            <div class="hero-block"></div>
+            <div class="hero-block">
+              <svg class="hero-svg">
+                <use
+                  xlink:href="./image/svg-sprite/svg-sprite.svg#three_sticks"
+                ></use>
+              </svg>
+            </div>
             <div class="hero-content">
               <h1 class="visually-hidden">Castaway Podcasts</h1>
               <p class="hero-text">
@@ -241,7 +251,9 @@
                 rel="noopener noreferrer"
               >
                 <svg class="about-svg">
-                  <use xlink:href="./image/svg-sprite/svg-sprite.svg#arrow-right"></use>
+                  <use
+                    xlink:href="./image/svg-sprite/svg-sprite.svg#arrow-right"
+                  ></use>
                 </svg>
               </a>
               <p class="about-content-text">Meet your host</p>
@@ -272,6 +284,7 @@
                 type="name"
                 class="subscribe-input"
                 placeholder="Name"
+                required
               />
 
               <input
@@ -279,6 +292,7 @@
                 type="email"
                 class="subscribe-input"
                 placeholder="Email"
+                required
               />
               <button type="submit" class="subscribe-button button">
                 Submite

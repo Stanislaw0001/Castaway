@@ -41,6 +41,10 @@ img {
     --transition-duration: 0.2s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -113,34 +117,26 @@ section {
     
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 25px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .container {
-        max-width: 320px;
-        padding: 0 15px;
-    }
-}
 /************** End of reset styles **************/
 
 .header {
-    padding: 26px 50px;
+    padding-block: 25px;
+}
+
+.header-container {
+    max-width: 1440px;
+    padding: 20px 50px;
+    margin: 0 auto;
 }
 
 .header-navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-menu-list {
     display: flex;
-    align-items: center;
     gap: 40px;
 }
 
@@ -170,6 +166,14 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero-svg {
+    position: relative;
+    right: 4%;
+    bottom: 3%;
+    width: 68px;
+    height: 74px;
 }
 
 .hero-content {
@@ -374,6 +378,14 @@ section {
     gap: 76px;
     line-height: 1.2;
     padding: 65px 60px;
+}
+
+.subscribe-svg {
+    position: relative;
+    right: 4%;
+    bottom: 3%;
+    width: 147px;
+    height: 91px;
 }
 
 .subscribe-info {
