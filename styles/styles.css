@@ -162,7 +162,7 @@ section {
     width: 100%;
     height: 873px;
     margin: 0 auto;
-    background-image: url(/image/IMAGE-about-2x.webp);
+    background-image: url(../image/IMAGE-about-2x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -365,7 +365,7 @@ section {
     width: 650px;
     height: 743px;
     border-radius: 12px;
-    background-image: url(/image/man-white-t-shirt-2x.webp);
+    background-image: url(../image/man-white-t-shirt-2x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -445,6 +445,9 @@ section {
 }
 
 .reviews-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 50px 55px;
     height: 321px;
 }
